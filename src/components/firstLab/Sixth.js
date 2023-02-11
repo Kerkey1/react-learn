@@ -8,7 +8,7 @@ const Sixth = () => {
         const third = document.getElementById("thirdValue").value;
         const fourth = document.getElementById("fourthValue").value;
         const array = [first, second, third, fourth];
-        const sort = array.sort((a, b) => a < b ? -1 : 1);
+        const sort = array.sort((a, b) => a - b);
         let res = ""
         sort.map(v => {
             res += v + ", "
